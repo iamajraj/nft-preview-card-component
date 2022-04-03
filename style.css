@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 300px;
+    margin: 0 2em;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.2);
+}
+.card .top{
+    position: relative;
+    overflow: hidden;
+}
+.card .top .equilibrium{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card .top .overlay{
+    cursor: pointer;
+    display: none;
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(178, 100%, 50%, 0.397);
+    justify-content: center;
+    align-items: center;
+}
+.card .top:hover .overlay{
+    display: flex;
+}
+.card .top .overlay img{
+    width: 50px;
+}
+.card .bottom .title{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card .bottom .title:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.card .bottom .desc{
+    font-size: 15px;
+    color:  hsl(215, 51%, 70%);
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+.card .bottom .bottom-middle{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.card .bottom .bottom-middle .price{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    color:  hsl(178, 100%, 50%);
+    gap: 7px;
+}
+
+.card .bottom .bottom-middle .date{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: hsl(215, 51%, 70%);
+    gap: 7px;
+}
+
+.card .bottom-creation{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .bottom-creation img{
+    width: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.card .bottom-creation p{
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+.card .bottom-creation p span{
+    color: #fff;
+    cursor: pointer;
+}
+.card .bottom-creation p span:hover{
+    color: hsl(178, 100%, 50%);
+}
